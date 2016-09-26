@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+    /*设置中间部分*/
+.scroll-tbody {
+height: 20rem;
+  table-layout:fixed; 
+border-collapse: collapse;
+}
+#short {
+    width: 16%;
+}
+#long {
+    width: 17%;
+}
+#authorInfo {
+    width: 80%;
+    position: relative;
+    right: -80%;
+    color: red;
+}
+a {
+    color: green;
+}
+a:hover {
+color: red;}
+
+
+.scroll-tbody tr th {    
+border: 1px solid #FF00FF;    
+overflow: hidden;  /*超出长度的内容不显示*/   
+white-space: nowrap;    
+}
+
+
+.scroll-tbody td{    
+    height: 3rem;
+}
+/*内容在这个DIV内*/  
+div.content {  
+width: 100%;  
+overflow: scroll;  /*总是显示滚动条*/  
+overflow-x: hidden; /*去掉横向滚动条*/  
+height: 28rem;  
+}
+#selectInfo {
+    width: 80%;
+    position: relative;
+    right: -80%;
+}
+/*输入框设置*/
+.someHandle input {
+   
+    width: 7rem;
+}

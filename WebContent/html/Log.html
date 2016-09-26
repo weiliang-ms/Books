@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/Log.css">
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script type="text/javascript" src="../js/Log.js"></script>
+</head>
+<body>
+	<br/>
+		<h2 align="center">登录界面</h2>
+	<div class="logdiv" ng-app="logApp">
+			<p align="right"><font color="red">用户免账号密码</font></p>
+		<form ng-controller="logController" style="margin: o auto">
+			<p>账号：<input maxlength="5" ng-model="account"></input></p>
+			<p>密码：<input maxlength="5" type="password" ng-model="password"></input></p>
+			<button ng-click="userLog()">用户登录</button>
+			<button ng-click="managerLog()">管理登录</button>
+			<button ng-click="reset()">重置输入</button>
+		</form>
+	</div>
+</body>
+</html>

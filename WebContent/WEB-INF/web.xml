@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>BookManageSystem</display-name>
+<servlet>
+   <servlet-name>servlet3</servlet-name>
+   <servlet-class>com.test.Test</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>servlet3</servlet-name>
+  	 <url-pattern>/run</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>servlet5</servlet-name>
+   <servlet-class>com.test.Borrow</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>servlet5</servlet-name>
+  	 <url-pattern>/br</url-pattern>
+  </servlet-mapping>
+  
+ 
+ <servlet>
+   <servlet-name>servlet10</servlet-name>
+   <servlet-class>com.test.Select</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>servlet10</servlet-name>
+  	 <url-pattern>/select</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>servletDelete</servlet-name>
+   <servlet-class>com.test.Delete</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>servletDelete</servlet-name>
+  	 <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+   <servlet-name>servletUpdate</servlet-name>
+   <servlet-class>com.test.Update</servlet-class>
+ </servlet>
+  
+ <servlet-mapping>
+     <servlet-name>servletUpdate</servlet-name>
+  	 <url-pattern>/update</url-pattern>
+ </servlet-mapping>
+
+
+  <servlet>
+   <servlet-name>servletAdd</servlet-name>
+   <servlet-class>com.test.Add</servlet-class>
+ </servlet>
+  
+ <servlet-mapping>
+     <servlet-name>servletAdd</servlet-name>
+  	 <url-pattern>/add</url-pattern>
+ </servlet-mapping>
+</web-app>
