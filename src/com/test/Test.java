@@ -20,7 +20,6 @@ import com.alibaba.fastjson.JSON;
 
 @SuppressWarnings("serial")
 public class Test extends HttpServlet{
-	  		
 	private Connection con;
 	private Statement stmt;
 	private ResultSet re;
@@ -29,7 +28,6 @@ public class Test extends HttpServlet{
 		 
 		this.doPost(request, response);
 	}
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -62,9 +60,4 @@ public class Test extends HttpServlet{
 					      e.printStackTrace(); 
 					    }
 				}
-  
-    
-
-		
-      
 }

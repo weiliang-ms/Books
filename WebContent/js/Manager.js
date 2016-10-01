@@ -59,17 +59,17 @@ var app=angular.module('selectApp', []);
         };
 
 
-        /*获得修改权限*/ 
-        var judgeState = false;
-        $scope.updateName="获得名字修改";
-        $scope.updateAuthor="获得作者修改";
-        $scope.updateType="获得类型修改";
-        $scope.objectName;
+		        /*获得修改权限*/ 
+		        var judgeState = false;
+		        $scope.updateName="获得名字修改";
+		        $scope.updateAuthor="获得作者修改";
+		        $scope.updateType="获得类型修改";
+		        $scope.objectName;
         $scope.toggleTooltip = function(name,author,type){
-        	$scope.updateName = name;
-        	$scope.updateAuthor = author;
-        	$scope.updateType = type;
-        	$scope.objectName = $scope.updateName;
+	        	$scope.updateName = name;
+	        	$scope.updateAuthor = author;
+	        	$scope.updateType = type;
+	        	$scope.objectName = $scope.updateName;
         		document.getElementById("state1").disabled="";
         		document.getElementById("state2").disabled="";
         		document.getElementById("state3").disabled="";
@@ -109,11 +109,7 @@ var app=angular.module('selectApp', []);
              window.location.href="../html/Manager.html";
           
         });
-
-            
+   
         }
-        
-        
-    	
     });
  
