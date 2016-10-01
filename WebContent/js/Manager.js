@@ -48,12 +48,10 @@ var app=angular.module('selectApp', []);
 				        {
 				            $scope.names=data;
 				        });
-				
 			}else{
 				
 				alert("该书籍已经存在");
 			}
-        	
   
         });
         };
